@@ -7,6 +7,11 @@
         "name": "RAM Property Services",
         "facebook": "https://www.facebook.com/rampropertyservicesuk/",
         "linkedIn": null,
-        "instragram": "https://www.instagram.com/rampropertyservices_/"
+        "instragram": "https://www.instagram.com/rampropertyservices_/",
+        "address1": "N Hanover St",
+        "address2": "Glasgow",
+        "phone": "01389777777",
+        "mobile": "07777777777",
+        "email": "asdf@asdf.com"
     }
 }

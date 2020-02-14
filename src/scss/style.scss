@@ -1312,7 +1312,7 @@ input:focus {
 
 .about-me-img {
     position: absolute;
-    background: url(../images/about-me-img.jpg) scroll center no-repeat;
+    background: scroll center no-repeat;
     background-size: cover;
     height: 100%;
 }
@@ -1362,6 +1362,7 @@ input:focus {
 
 .social i {
     margin: 0 5px;
+    font-size: 18px;
 }
 
 /* Pricing Tables */

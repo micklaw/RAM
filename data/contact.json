@@ -1,13 +1,10 @@
 {
-    "page": "home",
-    "output": "/",
+    "page": "contact",
+    "output": "/contact/",
     "data": {
         "head": {
-            "title": "Welcome, RAM Property Services",
+            "title": "Contact Us | RAM Property Services",
             "description": "RAM Property & construction services provide a first class service for various different services, inlcuding monoblocking, extensions, landscaping, carpentry to name but a few."
-        },
-        "panels": [
-            1,2,3,4,5,6,7,8,9,10,11,12
-        ]
+        }
     }
 }

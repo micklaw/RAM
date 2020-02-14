@@ -18,8 +18,10 @@ gulp.task('copy', function () {
         .pipe(gulp.dest(config.dist + "/js"));
     gulp.src('src/css/*.css')
         .pipe(gulp.dest( config.dist + "/css"));
-    gulp.src('src/fonts/*.*')
-        .pipe(gulp.dest( config.dist + "/fonts"));
+    gulp.src('src/webfonts/*.*')
+        .pipe(gulp.dest( config.dist + "/webfonts"));
+        gulp.src('src/fonts/*.*')
+            .pipe(gulp.dest( config.dist + "/fonts"));
     gulp.src('src/images/**/*.*')
         .pipe(gulp.dest( config.dist + "/images"));
     return new Promise(function(resolve, reject) {

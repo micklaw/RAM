@@ -40,7 +40,7 @@ gulp.task('scss', gulp.series('copy', function () {
 gulp.task('html', gulp.series('scss', function () {
     var mixinsJson = {};
     var mixins = [
-        'global'
+        'global','projects'
     ];
 
     for (var i = 0; i < mixins.length; i++) {

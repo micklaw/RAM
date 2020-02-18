@@ -1,0 +1,58 @@
+{
+    "pages": [
+        {
+            "name": "global",
+            "fields": [{
+                "head": [
+                    { "key": "title", "type": "textbox", "required": true, "maxLength": 150 },
+                    { "key": "description", "type": "textarea", "required": true, "maxLength": 300 },
+                    { "key": "keywords", "type": "textarea", "required": false, "maxLength": 500 },
+                    { "key": "author", "type": "textbox", "required": false, "maxLength": 150 }
+                ]
+            }],
+            "visible": false
+        },
+        {
+            "name": "Home",
+            "template": "home",
+            "fields": [
+                { "key": "projectSummary", "type": "summary", "templateSummary": "projectSummary", "max": 15 }
+            ],
+            "mixins": ["global"],
+            "visible": true,
+            "multi": false
+        },
+        {
+            "name": "Project",
+            "template": "project",
+            "fields": [
+                { "key": "title", "type": "textbox", "required": true, "maxLength": 100 },
+                { "key": "area", "type": "textbox", "required": true, "maxLength": 50 },
+                { "key": "duration", "type": "textbox", "required": false, "maxLength": 50 },
+                { "key": "date", "type": "datepicker", "required": true },
+                { "key": "content", "type": "markdown", "required": true, "maxLength": 1000 }
+                { 
+                    "key": "images", 
+                    "type": "collection", 
+                    "min": 1, 
+                    "max" : 12, 
+                    "fields": [
+                        { "key": "url", "type": "image", "required": true },
+                        { "key": "title", "type": "textarea", "required": true, "maxLength": 100 }
+                    ]
+                },
+                { "key": "video", "type": "textarea", "required": false }
+            ],
+            "templateSummary": "projectSummary",
+            "fieldsSummary": ["title","area","images.url","link"],
+            "mixins": ["global"],
+            "dependants": ["home"],
+            "visible": true,
+            "multi": true
+        }
+    ],
+    "imageSizes": [
+        { "name": "Landsape", "width": 1200, "height": 900 },
+        { "name": "Portait", "width": 900, "height": 1200 }
+    ]
+}

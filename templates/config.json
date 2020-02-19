@@ -16,9 +16,9 @@
             "name": "Home",
             "template": "home",
             "fields": [
-                { "key": "projectSummary", "type": "summary", "templateSummary": "projectSummary", "max": 15 }
+                { "key": "projectSummary", "type": "listing", "templateSummary": "projectSummary", "max": 15 }
             ],
-            "mixins": ["global"],
+            "mixins": ["global", "dependants/project"],
             "visible": true,
             "multi": false
         },
@@ -30,7 +30,7 @@
                 { "key": "area", "type": "textbox", "required": true, "maxLength": 50 },
                 { "key": "duration", "type": "textbox", "required": false, "maxLength": 50 },
                 { "key": "date", "type": "datepicker", "required": true },
-                { "key": "content", "type": "markdown", "required": true, "maxLength": 1000 }
+                { "key": "content", "type": "markdown", "required": true, "maxLength": 1000 },
                 { 
                     "key": "images", 
                     "type": "collection", 
@@ -43,12 +43,14 @@
                 },
                 { "key": "video", "type": "textarea", "required": false }
             ],
-            "templateSummary": "projectSummary",
-            "fieldsSummary": ["title","area","images.url","link"],
+            "listing": [{
+                "dataFieldName": "projectSummary",
+                "fields": ["title","area","images.url","link"]
+            }],
             "mixins": ["global"],
-            "dependants": ["home"],
             "visible": true,
-            "multi": true
+            "multi": true,
+            "dependants": ["home"]
         }
     ],
     "imageSizes": [

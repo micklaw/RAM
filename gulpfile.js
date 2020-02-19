@@ -38,23 +38,26 @@ gulp.task('scss', gulp.series('copy', function () {
 }));
 
 gulp.task('html', gulp.series('scss', function () {
-    var mixinsJson = {};
-    var mixins = [
-        'global','projects'
-    ];
-
-    for (var i = 0; i < mixins.length; i++) {
-        merge.recursive(mixinsJson, JSON.parse(fs.readFileSync('data/mixins/' + mixins[i] + '.json', "utf8")));
-    }
-
-    return gulp.src(['data/**/*.json', '!data/mixins/**/*.*'])
+    return gulp.src(['.freecms/**/*.json', '!.freecms/mixins/**/*.*'])
         .pipe(foreach(function (stream, file) {
             var json = JSON.parse(fs.readFileSync(file.path, "utf8"));
-            var data = merge.recursive(mixinsJson, json.data);
-            return gulp.src('src/pages/' + json.page + '.hbs')
-                .pipe(handlebars(data, {
+
+            util.log(file.path);
+
+            var mixinsJson = {};
+
+            for (var i = 0; i < json.mixins.length; i++) {
+                merge.recursive(mixinsJson, JSON.parse(fs.readFileSync('.freecms/mixins/' + json.mixins[i] + '.json', "utf8")));
+            }
+
+            var data = merge.recursive(mixinsJson, json);
+
+            util.log(data.data);
+
+            return gulp.src('templates/pages/' + json.page + '.hbs')
+                .pipe(handlebars(data.data, {
                     ignorePartials: true,
-                    batch: ['src/partials']
+                    batch: ['templates/partials']
                 }))
                 .pipe(rename('index.html'))
                 .pipe(gulp.dest(config.dist + json.output));
@@ -75,8 +78,6 @@ gulp.task('run', gulp.series('build', function () {
     gulp.watch("data/**/*.json", gulp.series('html'));
     gulp.watch("src/pages/**/*.hbs", gulp.series('html'));
     gulp.watch("src/partials/**/*.hbs", gulp.series('html'));
-    gulp.watch(config.dist + "/**/*.html").on('change', browserSync.reload);
-    gulp.watch(config.dist + "/js/*.js").on('change', browserSync.reload);
 
     return new Promise(function(resolve, reject) {
         resolve();

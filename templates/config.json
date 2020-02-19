@@ -1,13 +1,30 @@
 {
     "pages": [
         {
-            "name": "global",
-            "fields": [{
-                "head": [
-                    { "key": "title", "type": "textbox", "required": true, "maxLength": 150 },
-                    { "key": "description", "type": "textarea", "required": true, "maxLength": 300 },
-                    { "key": "keywords", "type": "textarea", "required": false, "maxLength": 500 },
-                    { "key": "author", "type": "textbox", "required": false, "maxLength": 150 }
+            "name": "Global Settings",
+            "sections": [{
+                "key": "head",
+                "displayName": "Metadata",
+                "fields": [
+                    { "key": "title", "type": "textbox", "required": true, "maxLength": 100 },
+                    { "key": "description", "type": "textarea", "required": true, "maxLength": 250 },
+                    { "key": "keywords", "type": "textarea", "required": false, "maxLength": 250 },
+                    { "key": "author", "type": "textbox", "required": false, "maxLength": 100 }
+                ]
+            }, 
+            {
+                "key": "company",
+                "displayName": "Company Info",
+                "fields": [
+                    { "key": "name", "type": "textbox", "required": true, "maxLength": 100 },
+                    { "key": "facebook", "type": "textbox", "required": false, "maxLength": 500 },
+                    { "key": "linkedIn", "type": "textbox", "required": false, "maxLength": 500 },
+                    { "key": "instragram", "type": "textbox", "required": false, "maxLength": 500 },
+                    { "key": "address1", "type": "textbox", "required": false, "maxLength": 250 },
+                    { "key": "address2", "type": "textbox", "required": false, "maxLength": 250 },
+                    { "key": "phone", "type": "textbox", "required": true, "maxLength": 50 },
+                    { "key": "mobile", "type": "textbox", "required": false, "maxLength": 50 },
+                    { "key": "email", "type": "textbox", "required": false, "maxLength": 200 }
                 ]
             }],
             "visible": false
@@ -15,42 +32,44 @@
         {
             "name": "Home",
             "template": "home",
-            "fields": [
-                { "key": "projectSummary", "type": "listing", "templateSummary": "projectSummary", "max": 15 }
-            ],
-            "mixins": ["global", "dependants/project"],
+            "fields": [],
+            "mixins": ["global"],
+            "dataMixins": ["dependants/project"],
             "visible": true,
             "multi": false
         },
         {
-            "name": "Project",
+            "name": "Projects",
             "template": "project",
-            "fields": [
-                { "key": "title", "type": "textbox", "required": true, "maxLength": 100 },
-                { "key": "area", "type": "textbox", "required": true, "maxLength": 50 },
-                { "key": "duration", "type": "textbox", "required": false, "maxLength": 50 },
-                { "key": "date", "type": "datepicker", "required": true },
-                { "key": "content", "type": "markdown", "required": true, "maxLength": 1000 },
-                { 
-                    "key": "images", 
-                    "type": "collection", 
-                    "min": 1, 
-                    "max" : 12, 
-                    "fields": [
-                        { "key": "url", "type": "image", "required": true },
-                        { "key": "title", "type": "textarea", "required": true, "maxLength": 100 }
-                    ]
-                },
-                { "key": "video", "type": "textarea", "required": false }
-            ],
-            "listing": [{
+            "fields": [{
+                "key": "body",
+                "displayName": "Body",
+                "fields": [
+                    { "key": "title", "type": "textbox", "required": true, "maxLength": 100 },
+                    { "key": "area", "type": "textbox", "required": true, "maxLength": 50 },
+                    { "key": "duration", "type": "textbox", "required": false, "maxLength": 50 },
+                    { "key": "date", "type": "datepicker", "required": true },
+                    { "key": "content", "type": "markdown", "required": true, "maxLength": 1000 },
+                    { 
+                        "key": "images", 
+                        "type": "collection", 
+                        "min": 1, 
+                        "max" : 12, 
+                        "fields": [
+                            { "key": "url", "type": "image", "required": true },
+                            { "key": "title", "type": "textarea", "required": true, "maxLength": 100 }
+                        ]
+                    },
+                    { "key": "video", "type": "textarea", "required": false }
+                ]
+            }],
+            "listingFields": [{
                 "dataFieldName": "projectSummary",
                 "fields": ["title","area","images.url","link"]
             }],
             "mixins": ["global"],
             "visible": true,
-            "multi": true,
-            "dependants": ["home"]
+            "multi": true
         }
     ],
     "imageSizes": [

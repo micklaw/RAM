@@ -32,16 +32,15 @@
         {
             "name": "Home",
             "template": "home",
-            "fields": [],
             "mixins": ["global"],
-            "dataMixins": ["dependants/project"],
+            "outputMixins": ["project"],
             "visible": true,
             "multi": false
         },
         {
             "name": "Projects",
             "template": "project",
-            "fields": [{
+            "sections": [{
                 "key": "body",
                 "displayName": "Body",
                 "fields": [
@@ -63,11 +62,11 @@
                     { "key": "video", "type": "textarea", "required": false }
                 ]
             }],
-            "listingFields": [{
+            "mixins": ["global"],
+            "output": [{
                 "dataFieldName": "projectSummary",
                 "fields": ["title","area","images.url","link"]
             }],
-            "mixins": ["global"],
             "visible": true,
             "multi": true
         }

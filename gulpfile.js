@@ -20,7 +20,7 @@ gulp.task('images', function () {
         width : 900,
         height : 1200,
         crop : true,
-        upscale : false
+        upscale : true
       }))
       .pipe(rename(function (path) { path.basename += "-portait"; }))
       .pipe(gulp.dest('dist/images/projects'));
@@ -30,7 +30,7 @@ gulp.task('images', function () {
         width : 1200,
         height : 900,
         crop : true,
-        upscale : false
+        upscale : true
         }))
         .pipe(rename(function (path) { path.basename += "-landscape"; }))
         .pipe(gulp.dest('dist/images/projects'));

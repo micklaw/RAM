@@ -7,11 +7,34 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     cssmin = require('gulp-cssmin'),
     sass = require('gulp-sass'),
+    imageResize = require('gulp-image-resize'),
     util = require("gulp-util");
 
 var config = {
     dist: "dist"
 }
+
+gulp.task('images', function () {
+    gulp.src("src/images/projects/**/*.{jpeg,jpg,png}")
+      .pipe(imageResize({
+        width : 900,
+        height : 1200,
+        crop : true,
+        upscale : false
+      }))
+      .pipe(rename(function (path) { path.basename += "-portait"; }))
+      .pipe(gulp.dest('dist/images/projects'));
+
+    return gulp.src("src/images/projects/**/*.{jpeg,jpg,png}")
+        .pipe(imageResize({
+        width : 1200,
+        height : 900,
+        crop : true,
+        upscale : false
+        }))
+        .pipe(rename(function (path) { path.basename += "-landscape"; }))
+        .pipe(gulp.dest('dist/images/projects'));
+  });
 
 gulp.task('copy', function () {
     gulp.src('src/js/**/*.js')
@@ -22,7 +45,7 @@ gulp.task('copy', function () {
         .pipe(gulp.dest( config.dist + "/webfonts"));
         gulp.src('src/fonts/*.*')
             .pipe(gulp.dest( config.dist + "/fonts"));
-    gulp.src('src/images/**/*.*')
+    gulp.src('src/images/*.*')
         .pipe(gulp.dest( config.dist + "/images"));
     return new Promise(function(resolve, reject) {
         resolve();
@@ -52,8 +75,6 @@ gulp.task('html', gulp.series('scss', function () {
 
             var data = merge.recursive(mixinsJson, json);
 
-            util.log(data.data);
-
             return gulp.src('templates/pages/' + json.page + '.hbs')
                 .pipe(handlebars(data.data, {
                     ignorePartials: true,
@@ -64,7 +85,7 @@ gulp.task('html', gulp.series('scss', function () {
         }));
 }));
 
-gulp.task('build', gulp.parallel('html','scss'));
+gulp.task('build', gulp.parallel('html','scss', 'images'));
 
 gulp.task('run', gulp.series('build', function () {
     browserSync.init({
@@ -78,6 +99,7 @@ gulp.task('run', gulp.series('build', function () {
     gulp.watch("data/**/*.json", gulp.series('html'));
     gulp.watch("src/pages/**/*.hbs", gulp.series('html'));
     gulp.watch("src/partials/**/*.hbs", gulp.series('html'));
+    gulp.watch(".freecms/**/*.json", gulp.series('html')).on('change', browserSync.reload);
 
     return new Promise(function(resolve, reject) {
         resolve();

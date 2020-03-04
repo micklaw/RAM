@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.rampropertyservices.co.uk/sitemap.xml

@@ -1,0 +1,88 @@
+{
+    "page": "project",
+    "output": "/projects/kitchen",
+    "data": {
+        "head": {
+            "title": "Kitchens | Projects | RAM Property Services",
+            "description": "TBC."
+        },
+        "body": {
+            "images": [{
+                "url": "/images/projects/kitchen/project-image-4-landscape.jpeg",
+                "title": "Main image",
+                "active": true
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-1-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-2-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-3-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-5-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-6-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-7-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-8-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-9-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-10-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-11-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-12-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-13-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-14-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-15-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-16-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/kitchen/project-image-17-landscape.jpeg",
+                "title": "Image 2"
+            }],
+            "title": "Kitchens ",
+            "area": "Alexandria TBC",
+            "date": "Dec 2019 TBC",
+            "content": "<p>TBC.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

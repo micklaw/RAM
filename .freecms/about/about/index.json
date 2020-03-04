@@ -1,0 +1,18 @@
+{
+    "page": "about",
+    "output": "/about/",
+    "data": {
+        "head": {
+            "title": "About Us | RAM Property Services",
+            "description": "RAM Property & construction services provide a first class service for various different services, inlcuding monoblocking, extensions, landscaping, carpentry to name but a few."
+        },
+        "body": {
+            "background": "https://placeimg.com/900/1200/arch?i=9",
+            "content": "<p>Give a blurb about how Ross and Mark are the owners and when they started etc and bit about each of them.</p><p>Then go on to a bit about the company and potentially companies that they have done work for in the past.</p>",
+            "work": "<p>Then go on to a bit about the company and potentially companies that they have done work for in the past.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

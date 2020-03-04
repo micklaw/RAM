@@ -1,0 +1,44 @@
+{
+    "page": "project",
+    "output": "/projects/decking-steps",
+    "data": {
+        "head": {
+            "title": "Decking patio & steps | Projects | RAM Property Services",
+            "description": "TBC."
+        },
+        "body": {
+            "images": [{
+                "url": "/images/projects/decking-4/project-image-1-landscape.jpeg",
+                "title": "Main image",
+                "active": true
+            },
+            {
+                "url": "/images/projects/decking-4/project-image-2-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/decking-4/project-image-3-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/decking-4/project-image-4-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/decking-4/project-image-5-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/decking-4/project-image-6-landscape.jpeg",
+                "title": "Image 2"
+            }],
+            "title": "Decking patio & steps",
+            "area": "Alexandria TBC",
+            "date": "Dec 2019 TBC",
+            "content": "<p>TBC.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

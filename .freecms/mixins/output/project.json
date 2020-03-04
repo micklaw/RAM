@@ -1,0 +1,160 @@
+{
+    "data": {
+        "projectSummary": [{
+            "title": "Bar.",
+            "area": "Alexandria",
+            "url": "/projects/mancave-bar",
+            "image": "/images/projects/bar/project-image-4-portait.jpeg"
+        },
+        {
+            "title": "Bathroom rennovation, classic.",
+            "area": "Balloch",
+            "url": "/projects/bathroom-renovation",
+            "image": "/images/projects/bathroom/project-image-6-landscape.jpeg"
+        },
+        {
+            "title": "Bathroom rennovation, modern.",
+            "area": "Strathleven",
+            "url": "/projects/bathroom-modern",
+            "image": "/images/projects/bathroom-2/project-image-6-portait.jpeg"
+        },
+        {
+            "title": "Decking & Staircase.",
+            "area": "Strathleven",
+            "url": "/projects/decking",
+            "image": "/images/projects/decking/project-image-1-landscape.jpeg"
+        },
+        {
+            "title": "Decking & Fencing.",
+            "area": "Alexandria",
+            "url": "/projects/decking-fencing",
+            "image": "/images/projects/decking-2/project-image-1-landscape.jpeg"
+        },
+        {
+            "title": "Decking patio platform.",
+            "area": "Alexandria",
+            "url": "/projects/decking-platform",
+            "image": "/images/projects/decking-3/project-image-1-portait.jpeg"
+        },
+        {
+            "title": "Decking patio & steps.",
+            "area": "Alexandria",
+            "url": "/projects/decking-steps",
+            "image": "/images/projects/decking-4/project-image-3-landscape.jpeg"
+        },
+        {
+            "title": "Driveway & monoblock.",
+            "area": "Dumbarton",
+            "url": "/projects/driveway-monoblock",
+            "image": "/images/projects/driveway/project-image-2-landscape.jpeg"
+        },
+        {
+            "title": "Driveway & lighting.",
+            "area": "Dumbarton",
+            "url": "/projects/driveway-lighting",
+            "image": "/images/projects/driveway-2/project-image-1-portait.jpeg" 
+        },
+        {
+            "title": "Driveway around house.",
+            "area": "Helensburgh",
+            "url": "/projects/driveway-wrap-around",
+            "image": "/images/projects/driveway-3/project-image-9-landscape.jpeg" 
+        },
+        {
+            "title": "Driveway with landscaping.",
+            "area": "Helensburgh",
+            "url": "/projects/driveway-landscaping",
+            "image": "/images/projects/driveway-4/project-image-9-portait.jpeg" 
+        },
+        {
+            "title": "Extension",
+            "area": "Helensburgh",
+            "url": "/projects/extension",
+            "image": "/images/projects/extension/project-image-3-landscape.jpeg" 
+        },
+        {
+            "title": "Privacy fencing",
+            "area": "Alexandria",
+            "url": "/projects/fencing",
+            "image": "/images/projects/fencing/project-image-4-portait.jpeg"
+        },
+        {
+            "title": "Driveway fencing.",
+            "area": "Balloch",
+            "url": "/projects/fencing-2",
+            "image": "/images/projects/fencing-2/project-image-4-landscape.jpeg"
+        },
+        {
+            "title": "Garage door.",
+            "area": "Strathleven",
+            "url": "/projects/garage-door",
+            "image": "/images/projects/garage-door/project-image-1-portait.jpeg"
+        },
+        {
+            "title": "Garage office conversion.",
+            "area": "Strathleven",
+            "url": "/projects/garage-office",
+            "image": "/images/projects/garage/project-image-4-landscape.jpeg"
+        },
+        {
+            "title": "Artifical grass.",
+            "area": "Alexandria",
+            "url": "/projects/garden-artifical",
+            "image": "/images/projects/garden/project-image-2-portait.jpeg"
+        },
+        {
+            "title": "Garden landscaping.",
+            "area": "Alexandria",
+            "url": "/projects/garden",
+            "image": "/images/projects/garden-2/project-image-5-landscape.jpeg"
+        },
+        {
+            "title": "Gazeebo.",
+            "area": "Alexandria",
+            "url": "/projects/gazeebo",
+            "image": "/images/projects/gazeebo/project-image-6-portait.jpeg"
+        },
+        {
+            "title": "Kitchen fitting.",
+            "area": "Dumbarton",
+            "url": "/projects/kitchen",
+            "image": "/images/projects/kitchen/project-image-4-landscape.jpeg"
+        },
+        {
+            "title": "Parking bay.",
+            "area": "Dumbarton",
+            "url": "/projects/parking-bay",
+            "image": "/images/projects/parking-bay/project-image-1-portait.jpeg" 
+        },
+        {
+            "title": "Paving.",
+            "area": "Helensburgh",
+            "url": "/projects/paving",
+            "image": "/images/projects/bar/project-image-3-landscape.jpeg" 
+        },
+        {
+            "title": "Shed.",
+            "area": "Helensburgh",
+            "url": "/projects/shed",
+            "image": "/images/projects/shed/project-image-7-portait.jpeg" 
+        },
+        {
+            "title": "Slabbing",
+            "area": "Helensburgh",
+            "url": "/projects/slabbing",
+            "image": "/images/projects/slabbing/project-image-3-landscape.jpeg" 
+        },
+        {
+            "title": "TV Wall.",
+            "area": "Helensburgh",
+            "url": "/projects/tv-wall",
+            "image": "/images/projects/tv-wall/project-image-2-portait.jpeg" 
+        },
+        {
+            "title": "Wall with fencing",
+            "area": "Helensburgh",
+            "url": "/projects/wall",
+            "image": "/images/projects/slabbing/project-image-4-landscape.jpeg" 
+        }]
+    }
+}

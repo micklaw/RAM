@@ -1,0 +1,32 @@
+{
+    "page": "project",
+    "output": "/projects/paving",
+    "data": {
+        "head": {
+            "title": "Paving | Projects | RAM Property Services",
+            "description": "TBC."
+        },
+        "body": {
+            "images": [{
+                "url": "/images/projects/bar/project-image-3-landscape.jpeg",
+                "title": "Main image",
+                "active": true
+            },
+            {
+                "url": "/images/projects/bar/project-image-1-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/bar/project-image-2-landscape.jpeg",
+                "title": "Image 2"
+            }],
+            "title": "Paving ",
+            "area": "Alexandria TBC",
+            "date": "Dec 2019 TBC",
+            "content": "<p>TBC.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

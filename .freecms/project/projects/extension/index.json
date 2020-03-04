@@ -1,0 +1,36 @@
+{
+    "page": "project",
+    "output": "/projects/extension",
+    "data": {
+        "head": {
+            "title": "Extension | Projects | RAM Property Services",
+            "description": "TBC."
+        },
+        "body": {
+            "images": [{
+                "url": "/images/projects/extension/project-image-3-landscape.jpeg",
+                "title": "Main image",
+                "active": true
+            },
+            {
+                "url": "/images/projects/extension/project-image-1-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/extension/project-image-2-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/extension/project-image-4-landscape.jpeg",
+                "title": "Image 2"
+            }],
+            "title": "Extension",
+            "area": "Helensburgh TBC",
+            "date": "Dec 2019 TBC",  
+            "content": "<p>TBC.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

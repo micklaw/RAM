@@ -1,0 +1,72 @@
+{
+    "page": "project",
+    "output": "/projects/driveway-wrap-around",
+    "data": {
+        "head": {
+            "title": "Driveway wrapping around house | Projects | RAM Property Services",
+            "description": "TBC."
+        },
+        "body": {
+            "images": [{
+                "url": "/images/projects/driveway-3/project-image-9-landscape.jpeg",
+                "title": "Main image",
+                "active": true
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-1-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-2-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-3-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-4-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-5-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-6-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-7-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-8-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-10-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-11-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-12-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-3/project-image-13-landscape.jpeg",
+                "title": "Image 2"
+            }],
+            "title": "Driveway wrapping around house",
+            "area": "Helensburgh TBC",
+            "date": "Dec 2019 TBC",
+            "content": "<p>TBC.</p>"
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

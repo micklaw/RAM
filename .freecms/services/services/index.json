@@ -1,0 +1,65 @@
+{
+    "page": "services",
+    "output": "/services/",
+    "data": {
+        "head": {
+            "title": "Services | RAM Property Services",
+            "description": "RAM Property & construction services provide a first class service for various different services, inlcuding monoblocking, extensions, landscaping, carpentry to name but a few."
+        },
+        "body": {
+            "services": [{
+                "title": "Extensions",
+                "description": "TBC",
+                "icon":"home"
+            },
+            {
+                "title": "Kitchen Fitting",
+                "description": "TBC",
+                "icon":"utensils"
+            },
+            {
+                "title": "Driveways",
+                "description": "TBC",
+                "icon":"road"
+            },
+            {
+                "title": "Decking",
+                "description": "TBC",
+                "icon":"chess-board"
+            },
+            {
+                "title": "Fencing",
+                "description": "TBC",
+                "icon":"grip-lines-vertical"
+            },
+            {
+                "title": "Room/Loft/Garage Conversions",
+                "description": "TBC",
+                "icon":"warehouse"
+            },
+            {
+                "title": "Landscaping",
+                "description": "TBC",
+                "icon":"tools"
+            },
+            {
+                "title": "Shed / Gazebo",
+                "description": "TBC",
+                "icon":"warehouse"
+            },
+            {
+                "title": "Wall construction",
+                "description": "TBC",
+                "icon":"border-all"
+            },
+            {
+                "title": "Loads more",
+                "description": "Contact us to see if there is anyway we can help you out.",
+                "icon":"tools"
+            }]
+        }
+    },
+    "mixins": [
+        "global"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "data": {
+        "head": {
+            "keywords": "property,joinery,carpentry,builders,roads,monoblock,extensions,driveways,conservatories,builders,alexandria,dumbarton,clydebank,glasgow",
+            "author": "Ross Mulgrew"
+        },
+        "company": {
+            "name": "RAM Property Services",
+            "facebook": "https://www.facebook.com/pg/rampropertyservices",
+            "linkedIn": null,
+            "instragram": "https://www.instagram.com/rampropertyservices_/",
+            "address1": "Industrial estate",
+            "address2": "Alexandria",
+            "phone": "01389777777",
+            "mobile": "07777777777",
+            "email": "contactus@rampropertyservices.co.uk"
+        }
+    }
+} 

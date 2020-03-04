@@ -1,6 +1,6 @@
 {
     "page": "project",
-    "output": "/projects/driveway-2-lighting",
+    "output": "/projects/driveway-lighting",
     "data": {
         "head": {
             "title": "Driveway & Lighting | Projects | RAM Property Services",
@@ -8,7 +8,7 @@
         },
         "body": {
             "images": [{
-                "url": "/images/projects/driveway-2/project-image-1-landscape.jpeg",
+                "url": "/images/projects/driveway-2/project-image-10-landscape.jpeg",
                 "title": "Main image",
                 "active": true
             },
@@ -42,6 +42,10 @@
             },
             {
                 "url": "/images/projects/driveway-2/project-image-9-landscape.jpeg",
+                "title": "Image 2"
+            },
+            {
+                "url": "/images/projects/driveway-2/project-image-1-landscape.jpeg",
                 "title": "Image 2"
             }],
             "title": "Driveway & Lighting",

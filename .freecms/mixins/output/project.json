@@ -52,7 +52,7 @@
             "title": "Driveway & lighting.",
             "area": "Dumbarton",
             "url": "/projects/driveway-lighting",
-            "image": "/images/projects/driveway-2/project-image-1-portait.jpeg" 
+            "image": "/images/projects/driveway-2/project-image-10-portait.jpeg" 
         },
         {
             "title": "Driveway around house.",
@@ -99,7 +99,7 @@
         {
             "title": "Artifical grass.",
             "area": "Alexandria",
-            "url": "/projects/garden-artifical",
+            "url": "/projects/garden-artificial",
             "image": "/images/projects/garden/project-image-2-portait.jpeg"
         },
         {
@@ -130,7 +130,7 @@
             "title": "Paving.",
             "area": "Helensburgh",
             "url": "/projects/paving",
-            "image": "/images/projects/bar/project-image-3-landscape.jpeg" 
+            "image": "/images/projects/paving/project-image-3-landscape.jpeg" 
         },
         {
             "title": "Shed.",
@@ -154,7 +154,7 @@
             "title": "Wall with fencing",
             "area": "Helensburgh",
             "url": "/projects/wall",
-            "image": "/images/projects/slabbing/project-image-4-landscape.jpeg" 
+            "image": "/images/projects/wall/project-image-4-landscape.jpeg" 
         }]
     }
 }

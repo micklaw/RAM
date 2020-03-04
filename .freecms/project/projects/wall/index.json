@@ -8,20 +8,20 @@
         },
         "body": {
             "images": [{
-                "url": "/images/projects/bar/project-image-4-landscape.jpeg",
+                "url": "/images/projects/wall/project-image-4-landscape.jpeg",
                 "title": "Main image",
                 "active": true
             },
             {
-                "url": "/images/projects/bar/project-image-1-landscape.jpeg",
+                "url": "/images/projects/wall/project-image-1-landscape.jpeg",
                 "title": "Image 2"
             },
             {
-                "url": "/images/projects/bar/project-image-2-landscape.jpeg",
+                "url": "/images/projects/wall/project-image-2-landscape.jpeg",
                 "title": "Image 2"
             },
             {
-                "url": "/images/projects/bar/project-image-3-landscape.jpeg",
+                "url": "/images/projects/wall/project-image-3-landscape.jpeg",
                 "title": "Image 2"
             }],
             "title": "Wall ",

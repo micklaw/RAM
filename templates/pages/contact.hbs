@@ -31,7 +31,10 @@
                     <i class="lnr lnr-envelope"></i>
                 </div>
                 <h5>EMAIL</h5>
-                <p>Office: <a href="mailto:{{company.email}}">{{company.email}}</a></p>
+                <p><a href="mailto:{{company.email}}">{{company.email}}</a></p>
+                {{#if company.email2}}
+                <p><a href="mailto:{{company.email2}}">{{company.email2}}</a></p>
+                {{/if}}
             </div>
         </div>
         <div class="row contact-area">

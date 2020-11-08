@@ -1,0 +1,74 @@
+@using RAM.Pages
+@using Dotented
+@using System.Linq;
+@model Project
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<div id="page-content" class="container">
+    <section id="project">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="project-content-area">
+                    <div id="project-slider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            @foreach (var image in Model.Images.Items)
+                            {
+                                var active = (image == Model.Images.Items.First() ? "active" : string.Empty);
+
+                                <div class="item @active">
+                                    <img src="@(image.Url + "?w=1100&h=800&fit=crop")" alt="@image.Title" />
+                                </div>
+                            }
+                        </div>
+                        <a class="left carousel-control" href="#project-slider" role="button" data-slide="prev">
+                            <span class="lnr lnr-chevron-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#project-slider" role="button" data-slide="next">
+                            <span class="lnr lnr-chevron-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h4>PROJECT INFO</h4>
+                            <div class="project-info">
+                                <div class="info">
+                                    <p><i class="lnr lnr-star"></i><span>Job: @Model.Title</span></p>
+                                </div>
+                                <div class="info">
+                                    <p><i class="lnr lnr-map"></i><span>Area: @Model.Area</span></p>
+                                </div>
+                                <div class="info">
+                                    <p><i class="lnr lnr-calendar-full"></i><span>Date: @Model.Date</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>PROJECT DESCRIPTION</h4>
+                            @Model.Content.ToHtml()
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <script src="/js/custom.js"></script>
+    <script src="/js/jquery.shuffle.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+        $('.lightbox').each(function() {
+            $(this).magnificPopup({
+                delegate: 'a.open-gallery', 
+                type: 'image',
+                gallery: {
+                enabled:true
+                }
+            });
+        });
+    </script>
+}

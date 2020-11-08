@@ -1,7 +1,7 @@
 {
   "name": "michael-law-web-development",
   "version": "1.0.0",
-  "description": "Michael Law Web Development Site",
+  "description": "RAM",
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",

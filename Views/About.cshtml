@@ -1,0 +1,40 @@
+@using RAM.Pages
+@using Dotented
+@using System.Linq;
+@model About
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+ <div id="page-content" class="container">
+        <div class="section-w-image">
+            <div class="row">
+                <div class="col-sm-6 about-me-img" style="background-image: url(@Model.BackgroundImage.Url);">
+                </div>
+                <div class="col-sm-6 col-sm-offset-6 about-description">
+                    <h4>ABOUT US</h4>
+                    @Model.Content.ToHtml()
+                </div>
+            </div>
+        </div>
+
+        <div class="space-50">&nbsp;</div>
+
+        <div class="typography">
+
+            <div class="row">
+                @foreach (var testi in Model.Testimonials.Items)
+                {
+                    var title = (testi == Model.Testimonials.Items.First() ? "Testimonials" : "&nbsp;");
+
+                    <div class="col-sm-6">
+                        <h4 class="sub-title">@Html.Raw(title)</h4>
+                        <blockquote>
+                            @testi.Content.ToHtml()
+                            <cite>- @testi.Person</cite>
+                        </blockquote>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,25 @@
+@using RAM.Pages
+@using Dotented
+@model Services
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<section id="services" class="space-top-2x space-bottom-2x">
+    <div class="container">
+        <div class="row">
+            @foreach (var job in Model.Jobs.Items)
+            {
+                <div class="col-xs-6 col-lg-4 feature-center">
+                    <div class="feature block">
+                        <div class="feature-icon">
+                            <i class="fa fa-@job.Icon"></i>
+                        </div>
+                        <h5>@job.Title</h5>
+                        <p>@job.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

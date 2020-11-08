@@ -1,0 +1,60 @@
+@using RAM.Pages
+@using Dotented
+@model Home
+@{
+    Layout = "~/Views/Layout.cshtml";
+    var count = 0;
+}
+
+<section class="intro-section video-section" id="hello">
+   <section id="portfolio">
+        <div class="container">
+            <ul class="row portfolio list-unstyled lightbox" id="grid">
+                @foreach (var project in Model.Projects.Items)
+                {
+                    var image = @project.Images.Items.First();
+                    var imageUrl = image.Url + (count % 2 == 0 ? "?w=1100&h=800&fit=crop" : "?w=800&h=1100&fit=crop");
+
+                    <li class="col-xs-6 col-md-4 project m-project">
+                        <div class="img-bg-color primary">
+                            <a href="@project.Url" class="project-link"></a>
+                            <img src="@imageUrl" alt="@image.Title">
+                            <div class="project-hover-tools">
+                                <a href="@project.Url" class="view-btn">
+                                    <i class="lnr lnr-eye"></i>
+                                </a>
+                                <a href="@image.Url" class="open-gallery">
+                                    <i class="lnr lnr-frame-expand"></i>
+                                </a>
+                            </div>
+                            <div class="project-details">
+                                <h5 class="project-title">@project.Title</h5>
+                                <p class="skill">@project.Area</p>
+                            </div>
+                        </div>
+                    </li> 
+                    count++;
+                }
+                <li class="col-xs-6 col-md-4 shuffle_sizer"></li>      
+            </ul>
+        </div>
+
+    </section>
+</section>
+
+@section Scripts {
+    <script src="/js/custom.js"></script>
+    <script src="/js/jquery.shuffle.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+    $('.lightbox').each(function() {
+        $(this).magnificPopup({
+            delegate: 'a.open-gallery', 
+            type: 'image',
+            gallery: {
+            enabled:true
+            }
+        });
+    });
+    </script>
+}

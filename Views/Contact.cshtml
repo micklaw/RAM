@@ -1,0 +1,49 @@
+@using RAM.Pages
+@using Dotented
+@model Contact
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+ <div id="page-content" class="container">
+    <div class="row">
+        <div class="col-sm-4 contact-info text-center space-bottom">
+            <div class="contact-icon">
+                <i class="lnr lnr-map-marker"></i>
+            </div>
+            <h5>ADDRESS</h5>
+            <p>@Model.Address1</p>
+            <p>@Model.Address2</p>
+        </div>
+
+        <div class="col-sm-4 contact-info text-center space-bottom">
+            <div class="contact-icon">
+                <i class="lnr lnr-smartphone"></i>
+            </div>
+            <h5>PHONE</h5>
+            <p><a href="tel:@Model.Phone1">@Model.Phone1</a></p>
+            <p><a href="tel:@Model.Phone2">@Model.Phone2</a></p>
+        </div>
+
+        <div class="col-sm-4 contact-info text-center space-bottom">
+            <div class="contact-icon">
+                <i class="lnr lnr-envelope"></i>
+            </div>
+            <h5>EMAIL</h5>
+            <p><a href="mailto:@Model.Email1">@Model.Email1</a></p>
+            <p><a href="mailto:@Model.Email2">@Model.Email2</a></p>
+        </div>
+    </div>
+    <div class="row contact-area">
+        <div class="col-sm-12 map">
+            <iframe width="100%" height="400px" id="mapcanvas" src='https://maps.google.com/maps?q=@Model.Address1, @Model.Address2&amp;t=&amp;z=10&amp;ie=UTF8&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'>
+                <div style='overflow:hidden;'>
+                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                </div>
+                <div>
+                    <small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small>
+                </div>
+            </iframe>
+        </div>
+    </div>
+</div>

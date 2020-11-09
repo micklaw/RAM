@@ -52,3 +52,11 @@ jobs:
         BRANCH: gh-pages
         FOLDER: dist 
         CLEAN: true
+    - name: Deploy azure website
+      if: github.event.action == 'ram_azure_master_webhook'
+      uses: bacongobbler/azure-blob-storage-upload@v1.1.1
+      with:
+        source_dir: 'dist'
+        container_name: '$web'
+        connection_string: ${{ secrets.STORAGECONNECTION }}
+        sync: true

@@ -1,6 +1,6 @@
 # RAM Property services Ltd website
 
-This is the website for my Brother in Laws company.
+This is the website for my brother in laws building company.
 
 ## How
 
@@ -12,8 +12,6 @@ If you want to find out how it works RTFM on [micklaw/Dotented.](https://github.
 - Action is kicked off here see .github/workflows/example.yml
 - If the webhook event matched this then deploy
 - Static site generation code is ran in action
-- Uploaded to gh-pages branch
-
-![Contentful webhook config](/contentful-webhook.png)
+- Uploaded to Azure static website with a CDN
 
 Its actually pretty easy to configure, simply digging about through here should do it. My example.yml has some of the old NPM stuff from when I don't this about 4 years ago, but I'm sure there is a better way now, I just couldnt be bothered changing it.
